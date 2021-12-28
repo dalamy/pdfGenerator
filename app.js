@@ -15,7 +15,7 @@ app.get('/pdf', (req,res) => {
     //path = 'https://www.google.com.ar';
     //console.log(path);
 
-    printPDF(path).then((pdf) => {
+    printPDF(queryObject.url).then((pdf) => {
         res.end(pdf);
     })
 });
