@@ -8,6 +8,7 @@ app.get('/pdf', (req,res) => {
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/pdf');
+    
     const queryObject = url.parse(req.url, true).query;
     //const path = `${queryObject.url}?job_analyst=${queryObject.job_analyst}&report_name=${queryObject.report_name}&facility=${queryObject.facility}&analysis_date=${queryObject.analysis_date}&pave_survey_invite=${queryObject.pave_survey_invite}&token=${queryObject.token}`
     //console.log(path);
